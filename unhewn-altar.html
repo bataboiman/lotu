@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Unhewn Altar — Lotu Tru / True Worship</title>
+  <meta name="description"
+    content="What the Bible says about true worship: God asked for uncut stones, not polished ones. A simple study for churches in Papua New Guinea about worship in spirit and truth.">
+  <meta property="og:title" content="The Unhewn Altar — Lotu Tru / True Worship">
+  <meta property="og:description"
+    content="God asked for uncut stones, not polished ones. A simple Bible study about true worship for PNG churches.">
+  <meta property="og:type" content="article">
+  <script>
+    /* Apply saved theme early to avoid flash */
+    (function () {
+      try {
+        var t = localStorage.getItem("ua-theme");
+        if (t === "dark" || t === "light") {
+          document.documentElement.setAttribute("data-theme", t);
+        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) { }
+    })();
+  </script>
+  <style>
+    /* ---------- Theme variables ---------- */
+    :root {
+      --bg: #faf6ef;
+      --bg-soft: #f1e9db;
+      --ink: #2b2419;
+      --ink-soft: #5a4f3e;
+      --accent: #a05c22;
+      --accent-soft: #e8d5bd;
+      --quote-bg: #f3ead9;
+      --quote-border: #c99a5e;
+      --callout-bg: #e7efe3;
+      --callout-border: #4c7a4c;
+      --callout-ink: #2e4d2e;
+      --danger-bg: #f7e8e4;
+      --danger-border: #a0522d;
+      --card-bg: #ffffff;
+      --line: #ddd2c0;
+      --stone: #b8a88e;
+      --stone-dark: #8c7c62;
+      --sky1: #e9dfcc;
+      --sky2: #f5efe2;
+      --shadow: 0 2px 10px rgba(60, 45, 20, 0.08);
+    }
+
+    [data-theme="dark"] {
+      --bg: #171410;
+      --bg-soft: #201c15;
+      --ink: #ece4d4;
+      --ink-soft: #b8ac96;
+      --accent: #e0a465;
+      --accent-soft: #4a3a26;
+      --quote-bg: #221d14;
+      --quote-border: #a97d45;
+      --callout-bg: #1b241b;
+      --callout-border: #6fa06f;
+      --callout-ink: #cfe3cf;
+      --danger-bg: #291c17;
+      --danger-border: #c07a55;
+      --card-bg: #201c15;
+      --line: #3a3226;
+      --stone: #57503f;
+      --stone-dark: #3e382c;
+      --sky1: #241f16;
+      --sky2: #1b1712;
+      --shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* ---------- Base ---------- */
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Ubuntu, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    main {
+      display: block;
+    }
+
+    article {
+      max-width: 68ch;
+      margin: 0 auto;
+      padding: 0 1.1rem 3rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      color: var(--accent);
+      margin: 2.4rem 0 0.8rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin: 1.6rem 0 0.5rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    section {
+      padding-top: 0.5rem;
+    }
+
+    img,
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .small-note {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- Sticky header ---------- */
+    header.topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 0.4rem 0.6rem;
+    }
+
+    .topbar-inner {
+      max-width: 68ch;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .topbar-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--accent);
+      margin-right: auto;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 45vw;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      min-height: 44px;
+      min-width: 44px;
+      padding: 0.4rem 0.7rem;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--card-bg);
+      color: var(--ink);
+      font-size: 0.85rem;
+      font-family: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      flex: none;
+    }
+
+    .btn .btn-label {
+      display: none;
+    }
+
+    @media (min-width: 640px) {
+      .btn .btn-label {
+        display: inline;
+      }
+
+      .topbar-title {
+        font-size: 1.05rem;
+      }
+    }
+
+    /* ---------- Hero with parallax ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(var(--sky2), var(--sky1));
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+      padding: 3.2rem 1.1rem 0;
+    }
+
+    .hero-layer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px;
+      pointer-events: none;
+      will-change: transform;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 42ch;
+      margin: 0 auto;
+      padding-bottom: 7.5rem;
+    }
+
+    .hero h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.4rem;
+    }
+
+    .hero .kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .subtitle {
+      color: var(--ink-soft);
+      font-size: 1.05rem;
+      margin: 0;
+    }
+
+    @media (min-width: 640px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    /* ---------- Scripture blockquote ---------- */
+    blockquote.scripture {
+      margin: 1.4rem 0;
+      padding: 1rem 1.1rem;
+      background: var(--quote-bg);
+      border-left: 4px solid var(--quote-border);
+      border-radius: 0 10px 10px 0;
+      font-style: italic;
+    }
+
+    blockquote.scripture p {
+      margin: 0 0 0.4rem;
+    }
+
+    blockquote.scripture cite {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    /* ---------- Tok Pisin callout ---------- */
+    .tokpisin {
+      margin: 1.4rem 0;
+      padding: 0.9rem 1.1rem;
+      background: var(--callout-bg);
+      border-left: 4px solid var(--callout-border);
+      border-radius: 0 10px 10px 0;
+      color: var(--callout-ink);
+    }
+
+    .tokpisin .tp {
+      font-weight: 700;
+      font-size: 1.1rem;
+      display: block;
+    }
+
+    .tokpisin .en {
+      font-size: 0.9rem;
+    }
+
+    /* ---------- Danger box & checklist ---------- */
+    .danger-box {
+      margin: 1.4rem 0;
+      padding: 1rem 1.1rem;
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      border-radius: 10px;
+    }
+
+    .danger-box h3 {
+      margin-top: 0;
+      color: var(--danger-border);
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding: 0.6rem 0.6rem 0.6rem 2.2rem;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .checklist li::before {
+      content: "?";
+      position: absolute;
+      left: 0.5rem;
+      top: 0.55rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ---------- Figures / SVG graphics ---------- */
+    figure.graphic {
+      margin: 1.6rem auto;
+      text-align: center;
+    }
+
+    figure.graphic svg {
+      display: block;
+      margin: 0 auto;
+    }
+
+    figure.graphic figcaption {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      margin-top: 0.5rem;
+    }
+
+    .svg-ink {
+      stroke: var(--ink);
+    }
+
+    .svg-soft {
+      stroke: var(--ink-soft);
+    }
+
+    .svg-accent {
+      stroke: var(--accent);
+    }
+
+    .svg-accent-fill {
+      fill: var(--accent);
+    }
+
+    .svg-good {
+      stroke: var(--callout-border);
+    }
+
+    .svg-bad {
+      stroke: var(--danger-border);
+    }
+
+    .svg-stone {
+      fill: var(--stone);
+    }
+
+    .svg-stone-dark {
+      fill: var(--stone-dark);
+    }
+
+    .svg-label {
+      fill: var(--ink);
+      font-family: inherit;
+      font-size: 12px;
+    }
+
+    .svg-label-soft {
+      fill: var(--ink-soft);
+      font-family: inherit;
+      font-size: 11px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer.site-footer {
+      border-top: 1px solid var(--line);
+      background: var(--bg-soft);
+      padding: 1.6rem 1.1rem 2.4rem;
+    }
+
+    .footer-inner {
+      max-width: 68ch;
+      margin: 0 auto;
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-inner h2 {
+      font-size: 1.05rem;
+      margin-top: 0;
+    }
+
+    .footer-inner ul {
+      padding-left: 1.2rem;
+      margin: 0.4rem 0 1rem;
+    }
+
+    /* ---------- Reveal animation ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* Animated arrows in G5 */
+    .flow-arrow {
+      transition: opacity 0.6s ease 0.3s;
+      opacity: 0;
+    }
+
+    .is-visible .flow-arrow {
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .reveal,
+      .flow-arrow {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      .hero-layer {
+        transform: none !important;
+      }
+    }
+
+    /* ---------- Print ---------- */
+    @media print {
+
+      :root,
+      [data-theme="dark"] {
+        --bg: #ffffff;
+        --bg-soft: #ffffff;
+        --ink: #000000;
+        --ink-soft: #333333;
+        --accent: #7a4515;
+        --accent-soft: #eeeeee;
+        --quote-bg: #f6f6f6;
+        --quote-border: #999999;
+        --callout-bg: #f2f6f2;
+        --callout-border: #4c7a4c;
+        --callout-ink: #1e3a1e;
+        --danger-bg: #faf2ef;
+        --danger-border: #8a4a2a;
+        --card-bg: #ffffff;
+        --line: #cccccc;
+        --stone: #cfc5b2;
+        --stone-dark: #a89a80;
+        --sky1: #ffffff;
+        --sky2: #ffffff;
+        --shadow: none;
+      }
+
+      header.topbar,
+      .no-print {
+        display: none !important;
+      }
+
+      body {
+        font-size: 12pt;
+      }
+
+      .hero {
+        padding-top: 1rem;
+      }
+
+      .hero-content {
+        padding-bottom: 2rem;
+      }
+
+      .hero-layer {
+        display: none;
+      }
+
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      .flow-arrow {
+        opacity: 1 !important;
+      }
+
+      blockquote.scripture,
+      .tokpisin,
+      .danger-box,
+      figure.graphic {
+        break-inside: avoid;
+      }
+
+      h2 {
+        break-after: avoid;
+      }
+
+      @page {
+        margin: 2cm;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="topbar-title">The Unhewn Altar</span>
+
+      <button class="btn" id="themeToggle" type="button" aria-label="Switch between light and dark mode"
+        aria-pressed="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          aria-hidden="true">
+          <g id="iconSun">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4">
+            </path>
+          </g>
+          <path id="iconMoon" style="display:none" d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"></path>
+        </svg>
+        <span class="btn-label" id="themeLabel">Dark</span>
+      </button>
+
+      <button class="btn" id="pdfBtn" type="button"
+        aria-label="Download as PDF (choose Save as PDF in the print window)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12"></path>
+          <path d="M7 10l5 5 5-5"></path>
+          <path d="M4 19h16"></path>
+        </svg>
+        <span class="btn-label">PDF</span>
+      </button>
+
+      <a class="btn" id="waShare" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3z"></path>
+          <path d="M8.8 9.2c.3 2.7 3.3 5.7 6 6l1.4-1.4-2-1.3-1 .7c-.9-.4-1.9-1.4-2.4-2.4l.7-1-1.3-2z"></path>
+        </svg>
+        <span class="btn-label">WhatsApp</span>
+      </a>
+
+      <a class="btn" id="fbShare" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"></path>
+        </svg>
+        <span class="btn-label">Facebook</span>
+      </a>
+
+      <button class="btn" id="nativeShare" type="button" style="display:none" aria-label="Share this page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <circle cx="6" cy="12" r="2.5"></circle>
+          <circle cx="17" cy="6" r="2.5"></circle>
+          <circle cx="17" cy="18" r="2.5"></circle>
+          <path d="M8.3 10.8l6.4-3.6M8.3 13.2l6.4 3.6"></path>
+        </svg>
+        <span class="btn-label">Share</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <p class="kicker">A Bible Study for PNG Churches</p>
+      <h1>The Unhewn Altar</h1>
+      <p class="subtitle">Lotu Tru — True Worship. Why God asked for uncut stones, and what that means for our churches
+        today.</p>
+    </div>
+
+    <!-- Parallax layers: far stones, near stones -->
+    <div class="hero-layer" id="layerFar" aria-hidden="true">
+      <svg viewBox="0 0 800 120" width="100%" height="120" preserveAspectRatio="xMidYMax slice">
+        <g class="svg-stone" opacity="0.55">
+          <ellipse cx="90" cy="110" rx="70" ry="28"></ellipse>
+          <ellipse cx="260" cy="115" rx="90" ry="32"></ellipse>
+          <ellipse cx="440" cy="112" rx="75" ry="27"></ellipse>
+          <ellipse cx="620" cy="116" rx="95" ry="33"></ellipse>
+          <ellipse cx="760" cy="110" rx="60" ry="25"></ellipse>
+        </g>
+      </svg>
+    </div>
+    <div class="hero-layer" id="layerNear" aria-hidden="true">
+      <svg viewBox="0 0 800 130" width="100%" height="130" preserveAspectRatio="xMidYMax slice">
+        <g class="svg-stone-dark">
+          <path d="M20 130 L45 88 L95 80 L135 100 L150 130 Z"></path>
+          <path d="M160 130 L190 95 L245 85 L290 105 L305 130 Z"></path>
+          <path d="M320 130 L355 90 L410 82 L455 102 L470 130 Z"></path>
+          <path d="M485 130 L515 96 L570 86 L615 106 L630 130 Z"></path>
+          <path d="M645 130 L675 92 L730 84 L775 104 L800 130 Z"></path>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <main>
+    <article>
+
+      <section class="reveal">
+        <p style="margin-top:2rem">In many churches today, we work very hard to make worship <em>sound</em> good and
+          <em>look</em> good. Big speakers. Skilled musicians. Powerful preaching voices. None of these things are evil.
+          But the Bible gives us a strong warning: God never asked us to make worship <em>impressive</em>. He asked us
+          to make it <em>true</em>. This short study walks through six Bible passages that all say the same thing, and
+          then asks what they mean for our churches in Papua New Guinea.
+        </p>
+        <div class="tokpisin">
+          <span class="tp">Lotu tru i kam long bel.</span>
+          <span class="en">True worship comes from the heart.</span>
+        </div>
+      </section>
+
+      <!-- SECTION 1 -->
+      <section class="reveal" aria-labelledby="s1">
+        <h2 id="s1">1. The Stone God Refused to Let Us Carve</h2>
+
+        <figure class="graphic" role="img"
+          aria-label="Two altars compared: rough uncut stones marked with a tick, and carved polished blocks with a chisel marked with a cross">
+          <svg viewBox="0 0 360 170" width="340" height="160">
+            <title>Two altars: uncut stones accepted, carved stones rejected</title>
+            <!-- Left altar: rough stones -->
+            <g fill="none" stroke-width="2" stroke-linejoin="round" class="svg-ink">
+              <path class="svg-stone" d="M25 140 L40 118 L68 112 L88 126 L92 140 Z"></path>
+              <path class="svg-stone" d="M95 140 L108 116 L136 112 L152 128 L155 140 Z"></path>
+              <path class="svg-stone" d="M42 112 L58 92 L86 88 L104 104 L100 116 L60 118 Z"></path>
+              <path class="svg-stone" d="M55 88 L72 70 L96 72 L100 86 L70 92 Z"></path>
+            </g>
+            <!-- Tick -->
+            <circle cx="90" cy="38" r="16" fill="none" stroke-width="2.5" class="svg-good"></circle>
+            <path d="M82 38 L88 45 L99 31" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+              class="svg-good"></path>
+            <text x="90" y="162" text-anchor="middle" class="svg-label">Uncut stones</text>
+
+            <!-- Right altar: carved blocks -->
+            <g fill="none" stroke-width="2" class="svg-ink">
+              <rect class="svg-stone" x="215" y="120" width="44" height="20"></rect>
+              <rect class="svg-stone" x="262" y="120" width="44" height="20"></rect>
+              <rect class="svg-stone" x="238" y="98" width="44" height="20"></rect>
+              <rect class="svg-stone" x="228" y="76" width="64" height="20"></rect>
+            </g>
+            <!-- Chisel -->
+            <g stroke-width="2" stroke-linecap="round" class="svg-bad" fill="none">
+              <path d="M318 60 L330 44"></path>
+              <path d="M312 72 L318 60 L324 66 Z" class="svg-accent-fill"></path>
+            </g>
+            <!-- Cross -->
+            <circle cx="262" cy="38" r="16" fill="none" stroke-width="2.5" class="svg-bad"></circle>
+            <path d="M254 30 L270 46 M270 30 L254 46" stroke-width="3" stroke-linecap="round" class="svg-bad"
+              fill="none"></path>
+            <text x="262" y="162" text-anchor="middle" class="svg-label">Carved stones</text>
+          </svg>
+          <figcaption>God accepted the rough altar. The polished one He called polluted.</figcaption>
+        </figure>
+
+        <p>In the Torah, God gave Israel a surprising rule about building His altar. <strong>"Hewn"</strong> means
+          <em>cut and shaped with a tool</em>. God said: do not do that.
+        </p>
+
+        <blockquote class="scripture">
+          <p>"And if thou wilt make me an altar of stone, thou shalt not build it of hewn stone: for if thou lift up thy
+            tool upon it, thou hast polluted it."</p>
+          <cite>Exodus 20:25</cite>
+        </blockquote>
+
+        <blockquote class="scripture">
+          <p>"Thou shalt build the altar of the LORD thy God of stones: thou shalt not lift up any iron tool upon them."
+          </p>
+          <cite>Deuteronomy 27:5</cite>
+        </blockquote>
+
+        <p>Think about that. The moment a chisel touched the stone, the altar was <em>polluted</em> — made unclean. Not
+          improved. Not beautified. Polluted.</p>
+        <p>Why? Because God wanted the altar to show <strong>His provision</strong>, not human skill. If the stones were
+          carved and polished, people would look at the altar and say, "What a fine builder!" God wanted them to look at
+          the altar and see only Him. The beauty was in the untouched stone that God Himself made.</p>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section class="reveal" aria-labelledby="s2">
+        <h2 id="s2">2. The Praise of Babies</h2>
+
+        <figure class="graphic" role="img" aria-label="A small child with open hands looking up toward light">
+          <svg viewBox="0 0 220 160" width="200" height="150">
+            <title>A small child looking up with open hands</title>
+            <g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-ink">
+              <circle cx="110" cy="78" r="16"></circle>
+              <path d="M110 94 L110 128"></path>
+              <path d="M110 102 L86 84"></path>
+              <path d="M110 102 L134 84"></path>
+              <path d="M110 128 L96 152"></path>
+              <path d="M110 128 L124 152"></path>
+              <!-- open hands -->
+              <path d="M86 84 L80 78 M86 84 L82 88" class="svg-accent"></path>
+              <path d="M134 84 L140 78 M134 84 L138 88" class="svg-accent"></path>
+            </g>
+            <!-- light rays -->
+            <g stroke-width="2" stroke-linecap="round" class="svg-accent" fill="none">
+              <path d="M110 30 L110 14"></path>
+              <path d="M88 36 L78 24"></path>
+              <path d="M132 36 L142 24"></path>
+              <path d="M76 52 L62 46"></path>
+              <path d="M144 52 L158 46"></path>
+            </g>
+          </svg>
+          <figcaption>Babies come with nothing — and God calls that praise strength.</figcaption>
+        </figure>
+
+        <blockquote class="scripture">
+          <p>"Out of the mouth of babes and sucklings hast thou ordained strength because of thine enemies, that thou
+            mightest still the enemy and the avenger."</p>
+          <cite>Psalm 8:2</cite>
+        </blockquote>
+
+        <p>A baby has no theology degree. No music training. No stage presence. No strong voice. A baby simply comes as
+          it is — small, weak, and fully dependent on someone bigger.</p>
+        <p>And God says that <em>this</em> is the praise that silences His enemy. Not the polished song. Not the perfect
+          performance. The raw, unpolished cry of someone who knows they need God for everything.</p>
+        <p>This is the unhewn altar again, in human form. God is not looking for what we can add. He is looking for
+          hearts that come empty-handed.</p>
+        <div class="tokpisin">
+          <span class="tp">Kam long God olsem liklik pikinini.</span>
+          <span class="en">Come to God like a small child.</span>
+        </div>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section class="reveal" aria-labelledby="s3">
+        <h2 id="s3">3. Worship in Spirit and Truth</h2>
+
+        <figure class="graphic" role="img"
+          aria-label="A heart with a flame inside, contrasted with a spotlight and mixing desk icons">
+          <svg viewBox="0 0 360 160" width="340" height="150">
+            <title>Heart with flame versus stage equipment</title>
+            <!-- Heart with flame -->
+            <g fill="none" stroke-width="2" stroke-linejoin="round">
+              <path class="svg-good"
+                d="M90 60 C78 44 52 46 50 68 C48 88 74 106 90 122 C106 106 132 88 130 68 C128 46 102 44 90 60 Z"></path>
+              <path class="svg-accent"
+                d="M90 70 C84 80 82 88 86 96 C88 101 94 103 97 98 C102 104 106 98 104 90 C102 82 96 76 90 70 Z"></path>
+            </g>
+            <text x="90" y="150" text-anchor="middle" class="svg-label">Heart on fire for God</text>
+
+            <!-- Stage icons -->
+            <g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-soft">
+              <!-- spotlight -->
+              <path d="M240 46 L258 62 L246 72 L230 54 Z"></path>
+              <path d="M250 68 L282 118 L226 118 Z" opacity="0.4"></path>
+              <!-- mixing desk -->
+              <rect x="296" y="92" width="52" height="28" rx="3"></rect>
+              <path d="M306 112 L306 100 M320 112 L320 96 M334 112 L334 104"></path>
+              <circle cx="306" cy="98" r="2"></circle>
+              <circle cx="320" cy="94" r="2"></circle>
+              <circle cx="334" cy="102" r="2"></circle>
+            </g>
+            <text x="290" y="150" text-anchor="middle" class="svg-label-soft">Lights and sound: not the point</text>
+          </svg>
+          <figcaption>Worship moved from the stage to the heart.</figcaption>
+        </figure>
+
+        <p>When Jesus spoke to the woman at the well, she asked Him about the right <em>place</em> to worship — this
+          mountain or Jerusalem? Jesus moved the whole question somewhere else:</p>
+
+        <blockquote class="scripture">
+          <p>"But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in
+            truth: for the Father seeketh such to worship him. God is a Spirit: and they that worship him must worship
+            him in spirit and in truth."</p>
+          <cite>John 4:23&ndash;24</cite>
+        </blockquote>
+
+        <p>Worship is no longer about the right building, the right decorations, or the right performance. It is an
+          <strong>inward reality</strong>. "In spirit" means the Holy Spirit moves it, deep inside a person. "In truth"
+          means the life honestly lines up with God — no acting, no show.
+        </p>
+        <p>Notice the Father is <em>seeking</em> such worshippers. He is not seeking better sound systems. He is seeking
+          hearts.</p>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section class="reveal" aria-labelledby="s4">
+        <h2 id="s4">4. Paul Threw Away the Chisel</h2>
+
+        <figure class="graphic" role="img"
+          aria-label="A chisel striking a stone and making a crack, showing that the tool pollutes the altar">
+          <svg viewBox="0 0 240 160" width="220" height="150">
+            <title>A chisel striking stone leaves a crack</title>
+            <!-- stone -->
+            <path class="svg-stone" stroke-width="2" stroke-linejoin="round"
+              d="M40 140 L54 92 L110 78 L172 90 L196 124 L188 140 Z" style="stroke: var(--ink); fill: var(--stone);">
+            </path>
+            <!-- crack -->
+            <path d="M118 82 L112 98 L122 110 L112 124 L120 140" fill="none" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" class="svg-bad"></path>
+            <!-- chisel -->
+            <g stroke-width="3" stroke-linecap="round" class="svg-ink" fill="none">
+              <path d="M126 70 L158 34"></path>
+              <path d="M118 80 L126 70 L134 78 Z" class="svg-accent-fill" stroke-width="2"></path>
+            </g>
+            <!-- impact marks -->
+            <g stroke-width="2" stroke-linecap="round" class="svg-bad" fill="none">
+              <path d="M104 66 L96 56"></path>
+              <path d="M138 60 L144 50"></path>
+              <path d="M100 78 L88 74"></path>
+            </g>
+          </svg>
+          <figcaption>"If thou lift up thy tool upon it, thou hast polluted it."</figcaption>
+        </figure>
+
+        <p>Paul was highly educated. He could have preached with clever, beautiful speech that would impress any crowd.
+          He chose not to — on purpose:</p>
+
+        <blockquote class="scripture">
+          <p>"And my speech and my preaching was not with enticing words of man's wisdom, but in demonstration of the
+            Spirit and of power: That your faith should not stand in the wisdom of men, but in the power of God."</p>
+          <cite>1 Corinthians 2:4&ndash;5</cite>
+        </blockquote>
+
+        <p>Paul saw the danger: if people believed because his words were impressive, their faith would stand on
+          <em>him</em>. He refused to carve the altar with the chisel of clever speech, so that faith would rest on
+          God's power alone.
+        </p>
+        <p>The prophet Zechariah heard the same message centuries earlier:</p>
+
+        <blockquote class="scripture">
+          <p>"...Not by might, nor by power, but by my spirit, saith the LORD of hosts."</p>
+          <cite>Zechariah 4:6</cite>
+        </blockquote>
+
+        <p>Not by human strength. Not by human skill. By God's Spirit alone.</p>
+        <div class="tokpisin">
+          <span class="tp">Spirit bilong God tasol inap.</span>
+          <span class="en">Only God's Spirit is enough.</span>
+        </div>
+      </section>
+
+      <!-- SECTION 5 -->
+      <section class="reveal" aria-labelledby="s5">
+        <h2 id="s5">5. The Danger Today: When Feelings Drive the Lotu</h2>
+
+        <p>Here is where we must be careful and honest with ourselves.</p>
+        <p>Many services today are built to create a feeling. The music swells. The lights change. The preacher raises
+          his voice at just the right moment. People cry, jump, and shout — and we say, "God moved today!" But did He?
+          Or did the <em>production</em> move us?</p>
+
+        <div class="danger-box">
+          <h3>The quiet lie</h3>
+          <p>The danger is this: we slowly teach people to believe that <strong>if it sounds good and looks good, God
+              accepts it</strong>. But God does not judge worship by pitch, volume, lights, or crowd size. He judges the
+            surrendered heart. Excitement made by equipment is not the same as the moving of the Holy Spirit.</p>
+        </div>
+
+        <p><strong>Be careful here — this is the part people get wrong in both directions.</strong> The Bible does not
+          say skill is sin. It does not say emotion is sin. David played skilfully. The psalms are full of loud joy and
+          deep tears. The problem is not skill or emotion. The problem is <em>reliance</em> — leaning on them.</p>
+
+        <figure class="graphic" role="img"
+          aria-label="Diagram showing the right order: Spirit leads to worship leads to emotion; and the wrong order: music and hype lead to emotion which is mistaken for worship">
+          <svg viewBox="0 0 360 200" width="340" height="190">
+            <title>Fruit not fuel: the right and wrong order of worship</title>
+            <!-- RIGHT ORDER -->
+            <text x="10" y="24" class="svg-label" font-weight="bold">Right order:</text>
+            <g fill="none" stroke-width="2" class="svg-good">
+              <rect x="10" y="34" width="86" height="30" rx="8"></rect>
+              <rect x="138" y="34" width="86" height="30" rx="8"></rect>
+              <rect x="266" y="34" width="86" height="30" rx="8"></rect>
+            </g>
+            <text x="53" y="53" text-anchor="middle" class="svg-label">Spirit</text>
+            <text x="181" y="53" text-anchor="middle" class="svg-label">Worship</text>
+            <text x="309" y="53" text-anchor="middle" class="svg-label">Emotion</text>
+            <g class="flow-arrow" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M100 49 L133 49 M127 43 L133 49 L127 55" class="svg-good"></path>
+              <path d="M228 49 L261 49 M255 43 L261 49 L255 55" class="svg-good"></path>
+            </g>
+            <text x="309" y="82" text-anchor="middle" class="svg-label-soft">= fruit</text>
+
+            <!-- WRONG ORDER -->
+            <text x="10" y="118" class="svg-label" font-weight="bold">Wrong order:</text>
+            <g fill="none" stroke-width="2" class="svg-bad">
+              <rect x="10" y="128" width="86" height="30" rx="8"></rect>
+              <rect x="138" y="128" width="86" height="30" rx="8"></rect>
+              <rect x="266" y="128" width="86" height="30" rx="8" stroke-dasharray="5 4"></rect>
+            </g>
+            <text x="53" y="147" text-anchor="middle" class="svg-label">Music / hype</text>
+            <text x="181" y="147" text-anchor="middle" class="svg-label">Emotion</text>
+            <text x="309" y="147" text-anchor="middle" class="svg-label">"Worship"</text>
+            <g class="flow-arrow" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M100 143 L133 143 M127 137 L133 143 L127 149" class="svg-bad"></path>
+              <path d="M228 143 L261 143 M255 137 L261 143 L255 149" class="svg-bad"></path>
+            </g>
+            <text x="309" y="176" text-anchor="middle" class="svg-label-soft">= fuel (man-made)</text>
+          </svg>
+          <figcaption>Emotion is the <strong>fruit</strong> of true worship — never the <strong>fuel</strong>.
+          </figcaption>
+        </figure>
+
+        <p>When the Spirit leads and a heart truly worships, emotion often follows — tears, joy, awe. That is good
+          fruit. But when we use music and hype as fuel to <em>manufacture</em> the emotion, and then call that feeling
+          "worship", we have picked up the chisel. We are carving the stones.</p>
+
+        <h3>Modern hewn stones</h3>
+        <p>What does the chisel look like today?</p>
+        <ul>
+          <li><strong>Musical talent as the offering.</strong> Skilled music sounds beautiful. But if the worship leader
+            is relying on vocal technique instead of a surrendered heart, it is a man-made offering.</li>
+          <li><strong>Eloquence as the anointing.</strong> Fine speech and stage presence can make a sermon exciting to
+            hear. But if the preacher relies on speaking skill instead of prayer and the Spirit, the words never pierce
+            the heart.</li>
+          <li><strong>Production as proof.</strong> When a church measures a service by how professional it looked and
+            sounded, the focus has shifted from a broken, humble heart to a spectacle.</li>
+        </ul>
+
+        <p>Here is a simple test. <strong>If the power went off — no speakers, no lights, no instruments — would the
+            worship still stand?</strong> If yes, the equipment was only a servant. If no, the equipment had become the
+          altar.</p>
+
+        <div class="tokpisin">
+          <span class="tp">God i no skelim naispela nois. Em i skelim bel.</span>
+          <span class="en">God does not measure the nice sound. He measures the heart.</span>
+        </div>
+      </section>
+
+      <!-- SECTION 6 -->
+      <section class="reveal" aria-labelledby="s6">
+        <h2 id="s6">6. A Practical Guide for Our Churches in PNG</h2>
+
+        <figure class="graphic" role="img"
+          aria-label="Simple line drawing of a village church building with a cross, palm tree beside it">
+          <svg viewBox="0 0 300 170" width="280" height="160">
+            <title>A village haus lotu with a palm tree</title>
+            <g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-ink">
+              <!-- church -->
+              <path d="M70 140 L70 90 L145 60 L220 90 L220 140 Z"></path>
+              <path d="M60 92 L145 56 L230 92" class="svg-accent"></path>
+              <!-- roof thatch lines -->
+              <path d="M92 82 L100 78 M118 72 L126 68 M164 68 L172 72 M190 78 L198 82" class="svg-soft"></path>
+              <!-- door and windows -->
+              <rect x="130" y="104" width="30" height="36"></rect>
+              <rect x="88" y="104" width="20" height="18"></rect>
+              <rect x="182" y="104" width="20" height="18"></rect>
+              <!-- cross -->
+              <path d="M145 56 L145 34 M136 42 L154 42" class="svg-accent"></path>
+              <!-- ground -->
+              <path d="M30 140 L270 140" class="svg-soft"></path>
+              <!-- palm tree -->
+              <path d="M252 140 C250 118 248 104 250 92"></path>
+              <path
+                d="M250 92 C240 84 230 82 222 84 M250 92 C244 80 236 74 228 74 M250 92 C254 80 262 74 270 76 M250 92 C260 84 270 84 276 88"
+                class="svg-good"></path>
+            </g>
+          </svg>
+          <figcaption>A haus lotu with no electricity can hold worship heaven bends to hear.</figcaption>
+        </figure>
+
+        <p>This message is good news for Papua New Guinea. Think of a small village haus lotu — no electricity, no sound
+          system, no instruments except hands and voices. By the world's measure, it has nothing. By the Bible's
+          measure, it may be an altar of perfect uncut stones. Nothing man-made is in the way.</p>
+        <p>And for our town and city churches with full bands and speakers — the gear is not the enemy. It simply asks
+          for more watchfulness, the way Paul watched his own eloquence.</p>
+
+        <h3>For worship leaders and musicians</h3>
+        <ul>
+          <li>Prepare your <strong>heart</strong> before you prepare your instrument. Pray before you practise.</li>
+          <li>Choose simple songs the whole congregation can sing — worship belongs to everyone, not only to those on
+            stage.</li>
+          <li>Practise well, then lean on God, not on the practice. Skill is a servant, never the offering itself.</li>
+          <li>Ask: would I still lead worship with the same joy if there were no microphone and no stage?</li>
+        </ul>
+
+        <h3>For preachers</h3>
+        <ul>
+          <li>Depend on prayer and the Word, not on stage tricks or a loud voice used only for effect.</li>
+          <li>Say it simply. Paul chose plain words so that faith would stand on God's power, not on man's wisdom.</li>
+          <li>Aim for hearts pierced by the Spirit, not ears entertained by delivery.</li>
+        </ul>
+
+        <h3>For the whole congregation</h3>
+        <p>Worship does not end when the service ends. Romans 12:1 says:</p>
+
+        <blockquote class="scripture">
+          <p>"I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice,
+            holy, acceptable unto God, which is your reasonable service."</p>
+          <cite>Romans 12:1</cite>
+        </blockquote>
+
+        <p>The Greek word for "reasonable" is <em>logikēn</em> (λογικὴν) — spiritual, rational service. Worship is a
+          daily, surrendered life, not a theatrical display. Your worship continues on Monday: in the garden, at the
+          market, in the office, on the PMV. An honest day's work, a clean tongue, a forgiving heart — that is the
+          living sacrifice.</p>
+
+        <div class="tokpisin">
+          <span class="tp">Givim laip bilong yu olgeta long God — long Sabat, Sande na long olgeta de tu.</span>
+          <span class="en">Give your whole life to God — on Sabbath, Sunday and every day.</span>
+        </div>
+
+        <h3>Askim yu yet — Ask yourself</h3>
+        <ul class="checklist">
+          <li>If the sound system failed today, would my worship still stand?</li>
+          <li>Am I coming to God like a baby — empty-handed and dependent — or like a performer?</li>
+          <li>Do I judge a service by how it made me <em>feel</em>, or by whether hearts surrendered to God?</li>
+          <li>When I sing or preach, am I relying on my skill, or on the Holy Spirit?</li>
+          <li>Does my worship continue on Monday — in the garden, the market, the office?</li>
+          <li>Is there anything in our church that shines a light on human talent instead of on God?</li>
+        </ul>
+      </section>
+
+      <!-- CLOSING -->
+      <section class="reveal" aria-labelledby="s7">
+        <h2 id="s7">The Beauty of the Uncut Stone</h2>
+        <p>God's rule about the altar was never about stones. It was about us. He was teaching His people, from the very
+          beginning, that He does not want our polish. He wants our hearts — rough, honest, and fully His.</p>
+        <p>So come as you are. Sing with the voice you have. Pray with the words you know. Let skill serve quietly and
+          let emotion follow freely — but let the Holy Spirit alone carry the worship. That altar, built of uncut
+          stones, is the one God calls clean.</p>
+        <p><em>May the Lord of hosts, who works not by might nor by power but by His Spirit, find in you a true
+            worshipper — in spirit and in truth. Amen.</em></p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <h2>Scriptures in this study</h2>
+      <ul>
+        <li>Exodus 20:25 — the unhewn altar</li>
+        <li>Deuteronomy 27:5 — no iron tool on the stones</li>
+        <li>Psalm 8:2 — strength from babes and sucklings</li>
+        <li>John 4:23&ndash;24 — worship in spirit and in truth</li>
+        <li>1 Corinthians 2:4&ndash;5 — not with enticing words of man's wisdom</li>
+        <li>Zechariah 4:6 — not by might, nor by power, but by my spirit</li>
+        <li>Romans 12:1 — a living sacrifice, your reasonable service</li>
+      </ul>
+      <p class="small-note">New Testament quotations follow the King James Version (Textus Receptus tradition); Old
+        Testament quotations follow KJV wording faithful to the Masoretic Text.</p>
+      <p class="small-note no-print">To save this page: tap the PDF button above and choose "Save as PDF".</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var doc = document.documentElement;
+      var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      /* ---------- Theme toggle ---------- */
+      var toggleBtn = document.getElementById("themeToggle");
+      var themeLabel = document.getElementById("themeLabel");
+      var iconSun = document.getElementById("iconSun");
+      var iconMoon = document.getElementById("iconMoon");
+
+      function currentTheme() {
+        return doc.getAttribute("data-theme") === "dark" ? "dark" : "light";
+      }
+      function renderThemeButton() {
+        var dark = currentTheme() === "dark";
+        /* Button shows the mode you will switch TO */
+        themeLabel.textContent = dark ? "Light" : "Dark";
+        iconSun.style.display = dark ? "" : "none";
+        iconMoon.style.display = dark ? "none" : "";
+        toggleBtn.setAttribute("aria-pressed", dark ? "true" : "false");
+      }
+      toggleBtn.addEventListener("click", function () {
+        var next = currentTheme() === "dark" ? "light" : "dark";
+        doc.setAttribute("data-theme", next);
+        try { localStorage.setItem("ua-theme", next); } catch (e) { }
+        renderThemeButton();
+      });
+      renderThemeButton();
+
+      /* ---------- PDF (print) ---------- */
+      document.getElementById("pdfBtn").addEventListener("click", function () {
+        window.print();
+      });
+
+      /* ---------- Share buttons ---------- */
+      var pageTitle = "The Unhewn Altar — Lotu Tru / True Worship";
+      function pageUrl() { return location.href; }
+
+      var wa = document.getElementById("waShare");
+      var fb = document.getElementById("fbShare");
+      function refreshShareLinks() {
+        wa.href = "https://wa.me/?text=" + encodeURIComponent(pageTitle + " " + pageUrl());
+        fb.href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(pageUrl());
+      }
+      refreshShareLinks();
+      wa.addEventListener("click", refreshShareLinks);
+      fb.addEventListener("click", refreshShareLinks);
+
+      if (navigator.share) {
+        var nativeBtn = document.getElementById("nativeShare");
+        nativeBtn.style.display = "";
+        nativeBtn.addEventListener("click", function () {
+          navigator.share({ title: pageTitle, url: pageUrl() }).catch(function () { });
+        });
+      }
+
+      /* ---------- Section reveal ---------- */
+      var revealEls = document.querySelectorAll(".reveal");
+      if (!reducedMotion && "IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+      }
+
+      /* ---------- Hero parallax ---------- */
+      var layerFar = document.getElementById("layerFar");
+      var layerNear = document.getElementById("layerNear");
+      var hero = document.getElementById("hero");
+      if (!reducedMotion && layerFar && layerNear && hero) {
+        var ticking = false;
+        function onScroll() {
+          if (ticking) return;
+          ticking = true;
+          window.requestAnimationFrame(function () {
+            var y = window.pageYOffset || 0;
+            var limit = hero.offsetHeight || 1;
+            if (y <= limit) {
+              layerFar.style.transform = "translate3d(0," + (y * 0.15) + "px,0)";
+              layerNear.style.transform = "translate3d(0," + (y * 0.32) + "px,0)";
+            }
+            ticking = false;
+          });
+        }
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+      }
+    })();
+  </script>
+</body>
+
+</html>
