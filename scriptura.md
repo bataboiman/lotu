@@ -1,0 +1,2 @@
+Tanakh
+Textus receptus
